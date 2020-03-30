@@ -17,5 +17,12 @@ public class NoEmpleado extends Usuario {
         JOptionPane.showMessageDialog(null, "Ah aportado: "+Aporte+" a su cuenta");
     }
     
-    
+    @Override
+    public void EstadoCuenta(){
+        if(Aporte>0){
+            JOptionPane.showMessageDialog(null, "Su estado de cuenat es: Activo");
+        }else{
+             JOptionPane.showMessageDialog(null, "Su estado de cuenat es: Inactivo");
+        }
+    }
 }
